@@ -1,0 +1,21 @@
+
+
+	Functia hash calculeaza restul impartirii sumei caracterelor ce fac parte din 
+cheile (Key) stocate in hash la numarul maxim de bucketuri ce pot fi stocate in hashtable (M).
+
+	Pentru functia put parcurg lista cu un singur pointer, retin pozitia unde trebuie 
+adaugata cheia si apoi o inserez la pozitia respectiva. Creez de fiecare data o celula, in care pun 
+informatia. Folosesc si o functie care verifica daca exista cheia deja.
+
+	La functia remove, parcurg lista aflata la indicele respectiv din tabela, localizez cheia si
+elimin informatia din celula respectiva, iar apoi refac legaturile in lista.
+
+	Functiile get si find, localizeaza cheia din lista aflata la indicele respectiv din tabela.
+
+	In functia print_bucket, ma duc la pozitia respectiva daca de indice in tabela, parcurg lista 
+si afisez valorile din lista.
+
+	Pentru distrugerea tabelei am folosit doua functii: una de eliberare a memoriei fiecarei liste din vector 
+si o functie in care parcurg vectorul de liste.
+	In functia main, am folosit functia atoi de convertire din char in int, pentru a putea folosi 
+ca parametru argumentul pentru functia print_bucket.
